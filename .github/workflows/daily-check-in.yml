@@ -4,7 +4,10 @@ on:
   schedule:
     - cron: '0 */6 * * *'  # 每12小时执行一次
   workflow_dispatch:
-
+  
+env:
+  TZ: Asia/Shanghai
+  
 jobs:
   run_script:
     runs-on: ubuntu-22.04
